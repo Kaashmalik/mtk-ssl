@@ -1,0 +1,102 @@
+The GitHub Student Developer Pack provides a wide range of free or discounted tools, services, and resources for verified students (typically requiring school email or student ID verification through GitHub). These offers are available while you maintain student status, with some having specific durations like 1 year or 6 months. Below is a categorized breakdown of the current offers as of November 2025, including what each provides.
+
+### Developer Tools
+- **GitHub Pro**: Free access to advanced features like private repositories and collaboration tools.
+- **GitHub Copilot**: Free Pro access for AI-powered code suggestions and completions.
+- **GitHub Codespaces**: Free Pro-level cloud-based development environments.
+- **GitHub Pages**: Free static website hosting (one site per account/organization, unlimited project sites).
+- **JetBrains**: Free annual subscription to IDEs like IntelliJ, PyCharm, etc.
+- **Visual Studio Code**: Free coding packs for Java, Python, or .NET setups.
+- **Testmail**: Free Essential plan for email testing.
+- **Termius**: Free Pro/Team features for SSH and terminal access (including mobile).
+- **GitLens**: Free access, plus integration with GitKraken (free for 6 months, then up to 80% off Pro).
+- **GitKraken**: Student Plan free for 6 months, then up to 80% off Pro.
+- **Tower**: Free Pro license for Git client.
+- **WorkingCopy**: All Pro features free (mobile Git client).
+- **GitHub Desktop**: Free open-source desktop Git client.
+- **Xojo**: Free Pro license for cross-platform app development.
+- **LocalStack**: Free license for AWS emulator in cloud environments.
+- **Appwrite**: Free Education plan (equivalent to Pro, worth $15/month) with high limits.
+- **Requestly**: Free Professional plan (worth $270) for 1 year (API mocking/debugging).
+- **PopSQL**: Free Premium subscription for collaborative SQL editing.
+- **SQLGate**: Access to most Standard features for 1 year.
+- **ToDiagram**: Free Pro Plan with full editor, no data limits, up to 10 cloud documents (no AI).
+- **Deepnote**: Free Team plan with unlimited projects, 30-day history, premium integrations, and up to 5GB RAM machines.
+- **Doppler**: Free Team subscription for secret management.
+- **Imgbot**: Free image optimization for all repositories.
+- **Codecov**: Free access for code coverage on public/private repos.
+- **Vaadin**: Free Pro subscription for commercial components/tools.
+- **Cryptolens**: 10 licenses and unlimited end-users free.
+- **Bump.sh**: Free Standard plan (worth $149/month).
+- **Pageclip**: Free Basic plan for form data collection.
+- **ConfigCat**: 1,000 feature flags and unlimited users free.
+- **DevCycle**: Free Starter Plan for 1 year with unlimited seats/flags.
+
+### Cloud Services and Credits
+- **Microsoft Azure**: For ages 18+: Free access to 25+ services + $100 credit. For ages 13-17: Free access to select services like App Services and DevOps.
+- **DigitalOcean**: $200 in platform credits for 1 year.
+- **Heroku**: $13/month credits for 24 months.
+- **MongoDB**: $50 Atlas credits, plus free Compass tool and University certification (worth $150).
+- **Camber**: Free Student plan with 200 CPU hours, 75GB storage, and 200 LLM messages/month.
+- **Microsoft Visual Studio Dev Essentials**: Free Community edition, Pluralsight training, 1-year Azure services with $200 first-month credit.
+
+### Learning and Education Resources
+- **DataCamp**: 3 months free access to data science courses.
+- **Educative**: 6 months free to 70+ courses (web dev, Python, ML), plus 30% discount on subs.
+- **FrontendMasters**: 6 months free to all courses/workshops.
+- **Scrimba**: 1 month free Pro access to 40+ interactive courses.
+- **Codedex**: 6 months free Club premium membership.
+- **InterviewCake**: 1 week full access to coding interview prep.
+- **AlgoExpert**: Free access to 20 questions, plus 10% discount on products.
+- **GoRails**: 12 months free access to Ruby on Rails lessons.
+- **SymfonyCasts**: 3-month free subscription for PHP/Symfony tutorials.
+- **GitHub Foundations Certification**: Free prep resources (guides, DataCamp/Microsoft courses).
+- **GitHub Certification Offer 2025**: 1 free voucher for Foundations or Copilot exam (expires June 30, 2026, while supplies last).
+- **GitHub Campus Experts**: Opportunity to join the program for leadership/training.
+
+### Security and Monitoring
+- **Datadog**: Pro account with 10 servers free for 2 years.
+- **New Relic**: Free access (worth $300/month).
+- **Sentry**: 50K errors, 100K transactions, 1GB attachments, 500 replays, and team features for 1 year (renewable).
+- **Honeybadger**: Free Small account for 1 year (error monitoring).
+- **Blackfire**: Free Developer subscription for performance profiling.
+- **1Password**: Free for 1 year, including Developer Tools.
+- **AstraSecurity**: 6 months free website firewall/malware scanner.
+- **CodeScene**: Free Student account for repo analysis.
+- **DeepScan**: 6-month free trial for code quality analysis.
+
+### Design and Productivity
+- **Notion**: Free Education plan (Plus features + AI responses, longer history).
+- **Visme**: 3 months free Starter plan for visuals/infographics.
+- **Icons8**: 3-month free subscription (icons, photos, illustrations, music).
+- **IconScout**: 60 premium icons/month free for 1 year.
+- **Bootstrap Studio**: Free license for web design.
+- **Polypane**: Free Individual plan for 1 year (browser for devs/designers).
+- **HazeOver**: Free app license for focus/distraction reduction.
+- **PomoDone**: Lite plan free for 2 years (productivity timer).
+- **DailyBot**: Business plan free for 10 users for 6 months (team check-ins).
+- **SlideCoach**: 2,000 credits free (40 AI presentation sessions) for 1 year.
+- **Notion Template Collection**: Free templates for CS courses, hackathons, portfolios.
+
+### Domains and Hosting
+- **Namecheap**: 1-year free .me domain + 1-year free SSL.
+- **Name.com**: Free domain from 25+ extensions (.live, .dev, etc.).
+- **.TECH**: 1-year free standard .TECH domain.
+
+### Infrastructure and APIs
+- **Stripe**: Waived fees on first $1,000 revenue.
+- **Travis CI**: Free private builds.
+- **BrowserStack**: Free Automate Mobile Plan (1 parallel/user) for 1 year.
+- **LambdaTest**: Free Live Plan for 1 year (cross-browser testing).
+- **POEditor**: Plus Plan free for 1 year (localization).
+- **Blockchair**: 100,000 free API requests (blockchain data).
+- **CARTO**: 2-year free upgrades (storage, real-time data, credits).
+- **Zyte**: Free Forever Scrapy Cloud Unit (unlimited projects/time).
+- **Arduino**: 6 months free Cloud + hardware discounts.
+- **Adafruit**: 1 year IO+ + hardware discounts.
+- **Themeisle**: 1 year free Neve Agency WordPress theme.
+- **SimpleAnalytics**: Starter plan free for 1 year (100K page views/month).
+- **Appfigures**: 1 year free analytics/reports.
+- **Dashlane**: Premium free for 6 months.
+
+To apply, visit education.github.com, verify your student status, and redeem offers. Some may require additional sign-up or codes. If you're asking about a specific offer or eligibility, provide more details for tailored advice!

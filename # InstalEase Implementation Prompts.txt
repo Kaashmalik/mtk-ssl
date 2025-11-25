@@ -1,0 +1,82 @@
+# InstalEase Implementation Prompts
+
+This document provides detailed, AI-agent-friendly prompts for implementing each phase of the InstalEase project. Each prompt is crafted to guide implementation as if directed by a senior and experienced developer, emphasizing best practices such as clean code architecture, modularity, error handling, security considerations, testing integration, and scalability. Since there is no existing GitHub repo (as noted, no cloning is possible), all prompts start from scratch using `npx create-next-app` or similar bootstrapping methods.
+
+Prompts are self-contained, phase-specific, and include references to the tech stack, database structure, and features from the previous README. Use these prompts sequentially to build the project phase by phase. For implementation, an AI agent or developer can feed these into a code generation tool or follow them manually.
+
+## General Best Practices Emphasized in All Prompts
+- **Code Structure**: Use modular components, hooks, and utilities. Follow SOLID principles, separate concerns (e.g., UI from logic).
+- **Error Handling**: Implement try-catch, validation (e.g., Zod for schemas), and user-friendly error messages.
+- **Security**: Use environment variables for secrets, sanitize inputs, apply RLS early.
+- **Testing**: Integrate Jest for unit tests and Playwright for E2E from the start.
+- **Performance**: Use memoization, lazy loading, and efficient queries.
+- **Version Control**: Initialize Git locally; commit at module milestones.
+- **Documentation**: Add JSDoc comments and inline explanations.
+- **Accessibility**: Ensure ARIA labels and semantic HTML in UI components.
+- **Payments**: Focus on sandbox integrations for JazzCash, EasyPaisa, and Raast; handle webhooks securely.
+
+## Phase 1: Foundation Prompt
+
+"Act as a senior full-stack developer with 15+ years of experience in building SaaS applications using Next.js and Supabase. Follow best practices for clean architecture, security, and scalability. Start a new project from scratch since there is no existing GitHub repo—no cloning allowed.
+
+Bootstrap the project using 'npx create-next-app@latest instalease --typescript --tailwind --eslint --app --src-dir --import-alias "@/*"'. Install necessary dependencies: '@supabase/supabase-js', 'zustand', '@tanstack/react-query', 'shadcn/ui' (initialize with 'npx shadcn-ui@latest init'), 'react-responsive'.
+
+Set up Supabase: Create a new project in the Supabase dashboard, enable authentication, and configure environment variables in .env.local for NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY.
+
+Implement authentication using Supabase Auth: Create login and signup pages with email/phone support, handle sessions with Supabase hooks, and protect routes using middleware or HOCs. Integrate RBAC by adding a 'users' table with columns for user_id (PK), shop_id (FK), username, role (e.g., admin, shop_owner, sales_rep), last_login. Use Zustand for global auth state.
+
+Set up multi-tenancy: Create 'shops' table with shop_id (PK), shop_name, logo_url, subscription_status, subscription_gateway. Apply Row Level Security (RLS) policies to ensure data isolation, e.g., for future tables like customers: 'USING (shop_id = (SELECT shop_id FROM users WHERE id = auth.uid()))'.
+
+Initialize Git locally: 'git init', create .gitignore for node_modules, .env, etc. Add basic testing: Install Jest and Playwright, write unit tests for auth utils and E2E for login flow.
+
+Ensure mobile responsiveness with React Responsive. Add JSDoc comments throughout. Run the app locally and verify auth works with test users. Output the complete code structure, including key files like app/layout.tsx, components/auth/Login.tsx, and Supabase migrations SQL."
+
+## Phase 2: Core Features Prompt
+
+"Acting as an experienced senior developer specializing in fintech SaaS, build on the Phase 1 foundation for InstalEase. Ensure best practices: Use Zod for form validation, implement optimistic updates with TanStack Query, handle async errors gracefully, and secure API routes.
+
+Add database tables via Supabase SQL migrations: Customers (customer_id PK, full_name, cnic_number, cnic_front_image_url, phone, email, address, monthly_income, shop_id FK), Guarantors (guarantor_id PK, customer_id FK, full_name, cnic_number, phone, relationship_to_customer, digital_signature_url, active_guarantees_count), Contracts (contract_id PK, customer_id FK, guarantor_id FK, product_name, down_payment, interest_rate, monthly_installment, contract_status), Installments (installment_id PK, contract_id FK, due_date, amount_due, payment_status, late_fee), Payments (payment_id PK, contract_id FK, amount, payment_date, paid_by_type, gateway), Reminders Log (reminder_id PK, contract_id FK, sent_date, reminder_type, delivery_status), Late Fees (late_fee_id PK, installment_id FK, fee_amount, days_overdue).
+
+Apply RLS to all tables for multi-tenancy.
+
+Implement Customer & Guarantor Management: Create /customers dashboard page with CRUD forms using shadcn/ui. Integrate OCR with Tesseract.js ('yarn add tesseract.js') for CNIC uploads—process images client-side or via Supabase edge function to extract and validate text. Enforce guarantor limit with a PostgreSQL trigger function.
+
+For Installment Applications & Contracts: Build /applications page with forms for product selection, payment plan calculations (use math libraries if needed, but plain JS for totals/schedules). Integrate pdf-lib ('yarn add pdf-lib') for contract PDF generation. Add digital signatures with react-signature-canvas ('yarn add react-signature-canvas'). Implement approval workflow: Send emails via Nodemailer ('yarn add nodemailer') on status changes.
+
+For Payments & Tracking: Integrate JazzCash, EasyPaisa, and Raast instead of Stripe. Install axios for API calls ('yarn add axios'). Create API routes (/api/payment/[gateway]) for initiating payments (e.g., POST to JazzCash sandbox with merchant ID/password/hash). Handle webhooks securely with signature verification. Record payments in DB, apply late fees via a daily Supabase edge function cron. Implement early settlements with discount calculations.
+
+For Automated Reminders: Install Twilio SDK ('yarn add twilio'). Set up edge functions to query due installments and send SMS (2 days before), WhatsApp/Email (1 day before), with escalations. Log deliveries.
+
+Add unit tests for calculations and E2E for workflows. Use TanStack Query for data fetching/mutations. Ensure accessibility in forms. Commit changes with descriptive messages. Output updated code files, including new components, API routes, and edge functions."
+
+## Phase 3: Polish Prompt
+
+"As a senior developer with expertise in UI/UX and real-time systems, refine the InstalEase project from Phase 2. Prioritize best practices: Optimize queries for performance, implement caching with TanStack Query, add audit logs, and ensure full mobile optimization.
+
+Build Portals & Dashboards: Create customer portal (/portal/customer) for viewing balances/history/payments, using protected routes. For shop owner dashboard (/dashboard): Implement CRUD, reports (e.g., outstanding totals via SQL aggregates), and analytics with Recharts ('yarn add recharts'). Staff panels: Use RBAC to limit access (e.g., sales_rep sees only applications).
+
+Enhance Security & Compliance: Add audit logs with PostgreSQL triggers to log changes in a new 'audit_logs' table. Use Supabase storage with signed URLs for secure document access.
+
+Integrate Real-Time: Use Supabase Realtime for live updates (e.g., subscribe to payments table for dashboard refreshes).
+
+UI Refinements: Customize shadcn/ui themes in tailwind.config.js, ensure responsive design with React Responsive. Add loading states, error boundaries.
+
+Expand testing: Achieve 80% coverage with Jest (components, utils) and Playwright (dashboards, real-time). Implement CI/CD skeleton with GitHub Actions YAML for tests.
+
+Handle edge cases like network failures in payments. Add JSDoc and inline comments. Run linting and fix issues. Output polished code updates, focusing on dashboard components and real-time subscriptions."
+
+## Phase 4: Launch Prompt
+
+"Assume the role of a senior DevOps-engineered developer experienced in deploying production SaaS apps. Finalize InstalEase from Phase 3 with best practices: Conduct security audits, set up monitoring, and prepare for scalability.
+
+For Deployment: Deploy frontend to Vercel—create a new project, add env vars, connect local Git (push to a new GitHub repo if needed, but start local). Promote Supabase to production tier. Configure CI/CD with GitHub Actions: Test on push, deploy on main merge.
+
+Beta Testing & Monitoring: Add error tracking with Sentry ('yarn add @sentry/nextjs'), integrate in _app.tsx. Create beta testing scripts or docs for inviting users. Monitor payments/logs via Supabase dashboard.
+
+Update Changelog: Add v1.0 entry with core features.
+
+Perform load testing with tools like Artillery ('yarn add -D artillery'). Fix any issues. Ensure all integrations (payments, notifications) use production keys in env.
+
+Output deployment steps, updated env examples, GitHub Actions YAML, and final app verification commands."
+
+These prompts can be used directly to generate code or guide development. If implementing via AI, chain them phase by phase for iterative building. 🚀

@@ -1,0 +1,40 @@
+### AI Coding Tools with Pro/Free Trials in 2025
+
+Based on a comprehensive search across web sources and X discussions (including Grok community recommendations), here's a curated list of AI tools that offer pro-level features with free trials or forever-free plans. These tools support coding, refactoring, pair programming, code design improvement, debugging, and related tasks. I've focused on those explicitly mentioned with trial options, prioritizing relevance to your query. Tools are grouped by primary focus, with details on trial length, key features, and pricing notes where available.
+
+Note: Availability can change; always check official sites for the latest. Many tools offer student discounts or referral credits as alternatives to trials.
+
+#### General AI Coding Assistants & Pair Programmers
+These provide autocompletion, code generation, and collaborative "pair programming" experiences.
+
+| Tool | Trial/Details | Key Features | Sources |
+|------|---------------|--------------|---------|
+| **Windsurf (formerly Codeium)** | 14-day free trial for Pro; forever-free plan with 25 prompt credits/month. Referral bonuses add 250 credits. | Code completion, refactoring suggestions, bug fixing, pair programming-style chat. Supports 80+ languages; integrates with IDEs like VS Code. Great for beginners. |   |
+| **Tabnine** | Free trial for Pro (up to 14 days); self-hosted enterprise option. Free basic plan available. | Context-aware code completion, refactoring guidance, code optimization for readability/efficiency. Privacy-focused with local deployment. Excels in large codebases. |     |
+| **Cursor** | 14-day free trial for Pro; subsidized free tier with Grok Code Fast integration. | AI-native IDE for full-stack apps, auto-debugging, refactoring, code design summaries. Voice input for fast edits; strong in pair programming. Often praised in Grok communities for speed. |     [post:21] [post:24] [post:25] [post:32] [post:38] |
+| **GitHub Copilot** | 30-day free trial for Enterprise; free for students/educators. Individual Pro at $10/month post-trial. | Real-time code suggestions, refactoring, debugging, pair programming. Integrates with VS Code; agentic for tasks like app building. |       [post:3] [post:28] [post:35] [post:36] [post:38] |
+| **Claude Code (Anthropic)** | Free tier; Pro trial via $20/month subscription (no fixed trial, but cancel anytime). Often bundled in tools like Cursor. | Advanced coding, refactoring, code reviews, pair programming. Strong in complex tasks; Grok users recommend for implementation. |     [post:20] [post:21] [post:22] [post:25] [post:26] [post:27] [post:29] [post:31] [post:32] [post:33] [post:36] [post:37] [post:38] |
+
+#### Refactoring & Code Optimization Tools
+Focused on improving code structure, efficiency, and design.
+
+| Tool | Trial/Details | Key Features | Sources |
+|------|---------------|--------------|---------|
+| **Cody (Sourcegraph)** | Free trial for Pro (14-30 days); enterprise custom. Free basic version. | Code smell detection, refactoring, unit test generation, optimization. Analyzes repositories for design improvements. |    |
+| **Refact.ai** | Free trial for premium features; starts at $10/month post-trial. | Code analysis, refactoring, fixes in multiple languages. Image-to-code conversion; strong in design enhancements. |  |
+| **Refraction** | Free plan; paid plans from $8/month with trial. | Automates refactoring, documentation, unit tests across 56+ languages. IDE integration for code design optimization. |  |
+| **Sourcery** | Free trial (14 days); integrates with GitHub for reviews. | Instant code reviews, refactoring suggestions, style enforcement. Helps prevent technical debt in design. |   |
+| **Zencoder** | Free trial for AI agents; supports 70+ languages. | Bug fixing, refactoring, multi-file tasks. Automates design improvements and workflows. |   |
+
+#### Specialized Tools (Design Improvement & More)
+| Tool | Trial/Details | Key Features | Sources |
+|------|---------------|--------------|---------|
+| **Bolt (bolt.new)** | Free tier; Pro trial for advanced features. | Micro SaaS building, refactoring with Supabase. Focuses on code design for small apps. |   [post:38] |
+| **CodeScene** | Free trial (14-30 days); enterprise pricing. | Technical debt management, AI refactoring, code health metrics for design. |   |
+| **Wispr Flow Pro** | 14-day free trial; extra month with referrals. | Voice-to-code, refactoring, design suggestions. Ideal for fast pair programming. |  |
+| **Replit AI** | Free trial for premium; browser-based. | Auto-completion, bug detection, refactoring for MVPs. Good for design iteration. |   [post:38] |
+
+#### Grok-Specific Insights from X Community
+In Grok discussions on X, users frequently recommend integrating Grok (e.g., Grok Code Fast) with tools like Cursor or Cline for free/subsidized coding trials. Grok 4 itself is subscription-based (via SuperGrok or Premium+), but offers extended free trials periodically (e.g., until Sept 2025 in some posts). It's praised for research, explanations, and fast coding, often paired with Claude for refactoring/design. No standalone "pro trial" for Grok, but API access starts at low costs for developers.
+
+For more options, sites like aitechtribe.com list 50+ tools with trials, including Pieces, Blackbox, and v0 for design-focused coding. If you need details on a specific tool, let me know!

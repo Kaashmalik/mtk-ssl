@@ -1,0 +1,39 @@
+laraibcreative.business@gmail.com
+
+AdminPassword123!
+
+
+NEXT_PUBLIC_APP_URL = https://laraibcreative.studio
+NEXT_PUBLIC_API_URL = https://laraibcreative-backend.onrender.com
+NEXT_PUBLIC_API_BASE_URL = https://laraibcreative-backend.onrender.com/api/v1
+NEXT_PUBLIC_SITE_URL = https://laraibcreative.studio
+NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME = dkzqbo109
+
+
+CORS_ORIGIN=https://laraibcreative.studio,https://www.laraibcreative.studio
+
+
+Admin Routes:
+Login: https://laraibcreative.studio/admin/login
+Dashboard: https://laraibcreative.studio/admin/dashboard
+Products: https://laraibcreative.studio/admin/products
+Orders: https://laraibcreative.studio/admin/orders
+
+Customers: https://laraibcreative.studio/admin/customers
+Settings: https://laraibcreative.studio/admin/settings
+Customer Routes:
+Home: https://laraibcreative.studio/
+Login: https://laraibcreative.studio/auth/login
+Register: https://laraibcreative.studio/auth/register
+Products: https://laraibcreative.studio/products
+Cart: https://laraibcreative.studio/cart
+Checkout: https://laraibcreative.studio/checkout
+🔐 Default Admin Credentials
+The admin login is currently set to redirect without authentication (TODO in code). You should implement proper admin authentication. Let me know if you want me to implement secure admin login with JWT tokens!
+
+Would you like me to:
+
+✅ Implement secure admin authentication?
+✅ Set up admin user in database?
+✅ Add admin role checking?
+Just let me know your domain registrar and if you need help with the admin authentication implementati
